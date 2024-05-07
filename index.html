@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<link href="https://assets.codepen.io/2509128/style.css" rel="stylesheet">
+
+<style>
+*, *::before, *::after {
+  font-family: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+html body {
+  font-size: 1.6rem;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+.safari {
+		.digit span {
+			// 3d transform with filter animation is broken on Safari
+			transition: none !important;
+			
+			&::before {
+				content: '';
+				position: absolute;
+				display: block;
+				// prevent the bounding box to be cut off during animation
+				width: 400%;
+				height: 400%;
+				top: 0;
+				left: 0;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main></main>
+    <script src="main.js"></script>
+</body>
+</html>
